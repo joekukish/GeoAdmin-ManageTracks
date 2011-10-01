@@ -1,3 +1,8 @@
+body {
+  font-family: Verdana,Tahoma,"BitStream vera Sans",Arial,Helvetica,sans-serif;
+  font-size: 14px;
+}
+
 #map {
     width: 800px;
     height: 600px;
