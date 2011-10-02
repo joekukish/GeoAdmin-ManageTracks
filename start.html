@@ -6,12 +6,30 @@
         <link href="static/css/map.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
         <script type="text/javascript" src="http://api.geo.admin.ch/loader.js"></script>
+        <script type="text/javascript" src="static/js/OpenLayers/Control/ModifyFeature.js"></script>
         <script type="text/javascript" src="static/js/map.js"></script>
     </head>
     <body>
-        <div id="box_baselayer"></div>
-        <div id="box_search"></div>
-        <div id="map"></div>
-        <div id="box_layers"></div>
+        <div id="map_box">
+            <div id="box_baselayer"></div>
+            <div id="box_search"></div>
+            <div id="map_canvas"></div>
+            <div id="box_layers"></div>
+            <div id="feature_actions">
+                <div>
+                    <input type="button" value="ADD new track" id="feature_add" /> <input class="hidden" type="button" value="CANCEL" id="feature_cancel" />
+                </div>
+                <div class="hidden" id="feature_save_block">
+                    <p>
+                        - start to register your feature on the map;<br/>
+                        - double-click to finish;<br/> 
+                        - click on the feature and reshape it, if needed;<br/>
+                        - fill the info below and hit SAVE to finish.
+                    </p>
+                    Track name: <input type="text" id="feature_name" /><br/>
+                    <input type="button" value="SAVE" id="feature_save" disabled="disabled" />
+                </div>
+            </div>
+        </div>
     </body>
 </html>
