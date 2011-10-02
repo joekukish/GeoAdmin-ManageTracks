@@ -1,3 +1,8 @@
+Some background
+===============
+This tool was created in the context of #makeopendata hackdays for this particular project http://makeopendata.ch/forum/discussion/13/wandervorschlaege
+However, much bigger motivation was that me getting started with using OpenLayers and the awesome http://api.geo.admin.ch/ APIs.
+
 How to run this tool on localhost/your_domain
 =============================================
 0. Prerequisites
