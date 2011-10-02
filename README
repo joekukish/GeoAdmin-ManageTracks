@@ -1,0 +1,27 @@
+How to run this tool on localhost/your_domain
+=============================================
+0. Prerequisites
+- you need a webserver running PHP with cURL lib client (my configuration is Apache/2.2.19 with PHP 5.3.6 on OSX Lion)
+- you need a Google Account for managing Fusion Tables
+- if you plan to use it on a non-localhost domain then you need to register in order to have access to the Swisstopo map tiles
+http://www.geo.admin.ch/internet/geoportal/de/home/services/geoservices/display_services/api_services/order_form.html
+
+1. Build the 'KML backend'
+Create a similar FusionTable to this one http://www.google.com/fusiontables/DataSource?dsrcid=1695530
+- two fields are required: name(text), geometry(location) - http://screencast.com/t/VrECESWmnML
+- the table needs to be "public" or "unlisted" - http://screencast.com/t/tMNIFy1P6Mb
+- copy the FT table id somewhere - http://screencast.com/t/SsBJwdH1 (in my case 1695530)
+
+2. Prepare the PHP 'API' for FusionTables
+- make a copy of api/ft_login_data.sample.php to api/ft_login_data.php
+cp api/ft_login_data.sample.php api/ft_login_data.php
+- edit api/ft_login_data.php and replace the $FUSION_TABLES_PARAMS dummy values with the table id, the google username and password used for the table
+
+How to use this tool
+====================
+- open http://yourdomain/start.html
+- navigate to the area where you want to record a new track (use searchbox for quickly lookup known names)
+- hit 'Add new track', the mouse cursor will change, you can start registering your track
+- when done, double click to finish registering
+- fill the Track name and hit 'SAVE'
+- in few seconds the track will be stored in FT and the KML layer will be refreshed
