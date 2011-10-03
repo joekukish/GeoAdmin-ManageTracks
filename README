@@ -3,6 +3,18 @@ Some background
 This tool was created in the context of #makeopendata hackdays for this particular project http://makeopendata.ch/forum/discussion/13/wandervorschlaege
 However, much bigger motivation was that me getting started with using OpenLayers and the awesome http://api.geo.admin.ch/ APIs.
 
+LIVE demo: http://www.vasile.ch/hacks/geoadmin-tracks-editor/
+
+How to use this tool
+====================
+If you are lazy just watch this video http://screencast.com/t/zVkUaKCQgfZA or
+- open http://www.vasile.ch/hacks/geoadmin-tracks-editor/
+- navigate to the area where you want to record a new track (use searchbox for quickly lookup known names)
+- click 'Add new track', the mouse cursor will change, you can start registering your track. When done, double click to finish registering
+- fill the Track name and click 'SAVE'
+- in few seconds the track will be stored in FT and the KML layer will be refreshed
+
+
 How to run this tool on localhost/your_domain
 =============================================
 0. Prerequisites
@@ -21,13 +33,3 @@ Create a similar FusionTable to this one http://www.google.com/fusiontables/Data
 - make a copy of api/ft_login_data.sample.php to api/ft_login_data.php
 cp api/ft_login_data.sample.php api/ft_login_data.php
 - edit api/ft_login_data.php and replace the $FUSION_TABLES_PARAMS dummy values with the table id, the google username and password used for the table
-
-How to use this tool
-====================
-- open http://yourdomain/start.html
-- navigate to the area where you want to record a new track (use searchbox for quickly lookup known names)
-- hit 'Add new track', the mouse cursor will change, you can start registering your track
-- when done, double click to finish registering
-- fill the Track name and hit 'SAVE'
-- in few seconds the track will be stored in FT and the KML layer will be refreshed
-OR watch http://screencast.com/t/zVkUaKCQgfZA
