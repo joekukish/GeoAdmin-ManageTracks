@@ -3,7 +3,11 @@ Some background
 This tool was created in the context of #makeopendata hackdays for this particular project http://makeopendata.ch/forum/discussion/13/wandervorschlaege
 However, much bigger motivation was that me getting started with using OpenLayers and the awesome http://api.geo.admin.ch/ APIs.
 
-LIVE demo: http://www.vasile.ch/hacks/geoadmin-tracks-editor/
+The tool allows you to create(digitize) a track(polyline) using Swisstopo maps and save the result in a Fusion Table.
+
+LIVE demo URL: http://www.vasile.ch/hacks/geoadmin-tracks-editor/
+Fusion Table URL: http://www.google.com/fusiontables/DataSource?dsrcid=1695530
+Fusion Table KML link(for Google Earth): http://www.google.com/fusiontables/exporttable?query=select+col2+from+1695530+&o=kmllink&g=col2
 
 How to use this tool
 ====================
